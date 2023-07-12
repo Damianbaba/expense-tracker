@@ -1,6 +1,5 @@
-import logo from "./logo.svg";
 import "./App.css";
-import ExpensesItem from "./components/ExpensesItem";
+import Expenses from "./components/Expenses";
 
 function App() {
   const expenses = [
@@ -32,31 +31,8 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello World!</p>
-        <ExpensesItem
-          title={expenses[0].title}
-          amount={expenses[0].amount}
-          date={expenses[0].date}
-        ></ExpensesItem>
-        <ExpensesItem
-          title={expenses[1].title}
-          amount={expenses[1].amount}
-          date={expenses[1].date}
-        ></ExpensesItem>
-        <ExpensesItem
-          title={expenses[2].title}
-          amount={expenses[2].amount}
-          date={expenses[2].date}
-        ></ExpensesItem>
-        <ExpensesItem
-          title={expenses[3].title}
-          amount={expenses[3].amount}
-          date={expenses[3].date}
-        ></ExpensesItem>
-
-      </header>
+      <p>Hello World!</p>
+      <Expenses items={expenses} />
     </div>
   );
 }
