@@ -26,14 +26,13 @@ const Expenses = (props) => {
                 amount={props.items[3].amount}
                 date={props.items[3].date}
             ></ExpensesItem>
-            <ExpensesItem
+            {/* <ExpensesItem
                 title={props.items[4].title}
                 amount={props.items[4].amount}
                 date={props.items[4].date}
-            ></ExpensesItem>
+            ></ExpensesItem> */}
         </Card>
     )
-
 }
 
 export default Expenses;
